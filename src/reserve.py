@@ -35,7 +35,6 @@ br.open('http://cdcfan/api/user-search?identity={}&_=1505786191038'.format(USER_
 assert(br.response().code == 200)
 
 response = json.loads(br.response().read())
-# {"psid": 27998, "name": "Denis Wu", "manager": "Yun Zhong", "cnname": "\u5434\u5fb7\u8f89", "enname": "Denis Wu", "depcode": "CHT.5622N"}
 
 PSID = response['psid']
 DEPARTMENT = response['depcode']
