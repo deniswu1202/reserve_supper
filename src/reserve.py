@@ -3,7 +3,6 @@ import mechanize
 import cookielib  
 import urllib
 import json
-import os
 
 # Encode the ' ' with '#'
 USER_NAME = 'denis+wu'
